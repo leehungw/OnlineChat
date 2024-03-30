@@ -17,9 +17,6 @@ namespace OnlineChat.UserControls
         public string getContent() { return content; }
         public void setContent(string content) { this.content = content; }
 
-
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
-        static extern bool HideCaret(IntPtr hWnd);
         public TextChatUserControl()
         {
             InitializeComponent();
@@ -29,26 +26,21 @@ namespace OnlineChat.UserControls
         {
             pb_ava.BackgroundImage = Image.FromFile(avatarPath);
             lb_sentTime.Text = time;
-            rtb_content.Text = content;
             this.content = content;
+            roundedTb1.Texts = content;
+            roundedTb1.BorderColor = Color.Blue;
+            roundedTb1.BorderRadius = 5;
         }
 
-        public void updateTheme(Color backColor, Color foreColor)
-        {
-            rtb_content.BackColor = backColor;
-            rtb_content.ForeColor = foreColor;
-            HideCaret(rtb_content.Handle);
-            rtb_content.ReadOnly = true;
-        }
         public void hightlightText(string text, Color color)
         {
             deHightlightText(SystemColors.Control);
-            rtb_content.Select(rtb_content.Text.IndexOf(text), text.Length);
-            rtb_content.SelectionBackColor = color;
+            roundedTb1.Select(roundedTb1.Texts.IndexOf(text), text.Length);
+            roundedTb1.SelectionBackColor = color;
         }
         public void deHightlightText(Color color)
         {
-            rtb_content.SelectionBackColor = color;
+            roundedTb1.SelectionBackColor = color;
         }
     }
 }

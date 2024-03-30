@@ -99,6 +99,12 @@
     <Compile Include="UserControls\ImageFilesUserControl.Designer.cs">
       <DependentUpon>ImageFilesUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\RoundedTb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RoundedTb.Designer.cs">
+      <DependentUpon>RoundedTb.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\TextChatUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ImageFilesUserControl.resx">
       <DependentUpon>ImageFilesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RoundedTb.resx">
+      <DependentUpon>RoundedTb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TextChatUserControl.resx">
       <DependentUpon>TextChatUserControl.cs</DependentUpon>

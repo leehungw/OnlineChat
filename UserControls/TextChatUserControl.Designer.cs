@@ -30,15 +30,16 @@
         {
             this.lb_sentTime = new System.Windows.Forms.Label();
             this.pb_ava = new System.Windows.Forms.PictureBox();
-            this.rtb_content = new System.Windows.Forms.RichTextBox();
+            this.roundedTb1 = new BaiThucHanh1.UserControls.RoundedTb();
             ((System.ComponentModel.ISupportInitialize)(this.pb_ava)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_sentTime
             // 
+            this.lb_sentTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_sentTime.AutoSize = true;
             this.lb_sentTime.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sentTime.Location = new System.Drawing.Point(3, 67);
+            this.lb_sentTime.Location = new System.Drawing.Point(3, 129);
             this.lb_sentTime.MaximumSize = new System.Drawing.Size(150, 0);
             this.lb_sentTime.Name = "lb_sentTime";
             this.lb_sentTime.Size = new System.Drawing.Size(67, 17);
@@ -54,30 +55,38 @@
             this.pb_ava.TabIndex = 9;
             this.pb_ava.TabStop = false;
             // 
-            // rtb_content
+            // roundedTb1
             // 
-            this.rtb_content.BackColor = System.Drawing.SystemColors.Control;
-            this.rtb_content.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtb_content.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rtb_content.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtb_content.Location = new System.Drawing.Point(93, 3);
-            this.rtb_content.Name = "rtb_content";
-            this.rtb_content.ReadOnly = true;
-            this.rtb_content.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.rtb_content.Size = new System.Drawing.Size(261, 79);
-            this.rtb_content.TabIndex = 13;
-            this.rtb_content.Text = "123";
+            this.roundedTb1.AutoSize = true;
+            this.roundedTb1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.roundedTb1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.roundedTb1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.roundedTb1.BorderRadius = 8;
+            this.roundedTb1.BorderSize = 1;
+            this.roundedTb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedTb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.roundedTb1.Location = new System.Drawing.Point(103, 4);
+            this.roundedTb1.Margin = new System.Windows.Forms.Padding(4);
+            this.roundedTb1.Multiline = true;
+            this.roundedTb1.Name = "roundedTb1";
+            this.roundedTb1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.roundedTb1.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            this.roundedTb1.Size = new System.Drawing.Size(250, 35);
+            this.roundedTb1.TabIndex = 14;
+            this.roundedTb1.Texts = "";
+            this.roundedTb1.UnderlinedStyle = false;
             // 
             // TextChatUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.rtb_content);
+            this.Controls.Add(this.roundedTb1);
             this.Controls.Add(this.lb_sentTime);
             this.Controls.Add(this.pb_ava);
             this.Name = "TextChatUserControl";
-            this.Size = new System.Drawing.Size(460, 88);
+            this.Size = new System.Drawing.Size(460, 150);
             ((System.ComponentModel.ISupportInitialize)(this.pb_ava)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -88,6 +97,6 @@
 
         private System.Windows.Forms.PictureBox pb_ava;
         private System.Windows.Forms.Label lb_sentTime;
-        private System.Windows.Forms.RichTextBox rtb_content;
+        private BaiThucHanh1.UserControls.RoundedTb roundedTb1;
     }
 }

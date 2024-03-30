@@ -140,7 +140,6 @@ namespace OnlineChat
             //Add Text Chat
             TextChatUserControl textChatUserControl = new TextChatUserControl();
             textChatUserControl.LoadData(currentUser.avaPath, content, time);
-            textChatUserControl.updateTheme(this.BackColor, this.ForeColor);
             fl_pn_chatBox.Controls.Add(textChatUserControl);
             fl_pn_chatBox.AutoScrollPosition = new Point(0, fl_pn_chatBox.DisplayRectangle.Height);
             tb_chatBox.Clear();
@@ -241,10 +240,6 @@ namespace OnlineChat
             tb_chatBox.BackColor = this.BackColor;
             tb_chatBox.ForeColor = this.ForeColor;
 
-            foreach (TextChatUserControl tc in fl_pn_chatBox.Controls.OfType<TextChatUserControl>())
-            {
-                tc.updateTheme(this.BackColor, this.ForeColor);
-            }
         }
 
         private void ReloadChatContent(List<ChatContent> chatContents)
@@ -257,7 +252,6 @@ namespace OnlineChat
                     case "Text":
                         TextChatUserControl textChatUserControl = new TextChatUserControl();
                         textChatUserControl.LoadData(currentUser.avaPath, chatContent.Content, chatContent.TimeStamp.ToString("h:mm:ss tt"));
-                        textChatUserControl.updateTheme(this.BackColor, this.ForeColor);
                         fl_pn_chatBox.Controls.Add(textChatUserControl);
                         break;
                     case "Image":

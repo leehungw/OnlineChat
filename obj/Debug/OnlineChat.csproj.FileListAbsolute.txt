@@ -26,3 +26,4 @@ D:\TH01\OnlineChat\obj\Debug\AxInterop.WMPLib.dll
 D:\TH01\OnlineChat\obj\Debug\OnlineChat.csproj.ResolveComReference.cache
 D:\TH01\OnlineChat\obj\Debug\OnlineChat.UserControls.ImageFilesUserControl.resources
 D:\TH01\OnlineChat\obj\Debug\OnlineChat.UserControls.VideoFilesUserControl.resources
+D:\TH01\OnlineChat\obj\Debug\BaiThucHanh1.UserControls.RoundedTb.resources
